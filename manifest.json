@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "My First Chrome Extension",
+  "description": "This is my very first chrome extension",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "chrome_url_overrides":{
+  "newtab": "index.html"
+  }
+  
+
+}
