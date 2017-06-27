@@ -1,13 +1,4 @@
-chrome.runtime.onStartup.addListener(function () {
-    /* Do some initialization */
-});
-document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById('Start');
-    link.addEventListener('click', function() {
 timer();   
- });
-});
-
 
 function timer(){
 
@@ -91,7 +82,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) +  1* 5 * 1000);
+var deadline = new Date(Date.parse(new Date()) +  1 * 5 * 1000);
 initializeClock('clockdiv', deadline);
 }
 
