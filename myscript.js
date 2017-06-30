@@ -1,4 +1,5 @@
-timer();   
+timer();  
+
 
 function timer(){
 
@@ -72,7 +73,7 @@ function initializeClock(id, endtime) {
 	}
 		else
 	{
-		alert("Get a drink of water")
+		alert("Break time. Get a drink of water")
 	}
 	
     }
@@ -82,7 +83,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) +  1 * 5 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 1 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 }
 
